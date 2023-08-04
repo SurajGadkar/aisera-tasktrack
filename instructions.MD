@@ -1,6 +1,5 @@
-## Instructions to run the program
+#Instructions to run the program
 
-# Kindly paste the log file in the current directory
+### Kindly paste the log file in the current directory
+### In Terminal, run --> node tasktrack.js "fileName"
 
-# In Terminal, run --> node tasktrack.js "fileName"
-# aisera-tasktrack
