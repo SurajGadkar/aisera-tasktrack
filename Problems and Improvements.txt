@@ -1,0 +1,20 @@
+
+Problems : 
+    1. Main Problem I found in the dataset is that the task events, Without proper validation and sequence, the log may have tasks which says completed before starting.
+    2.(the case where the task is stopped is also considered as done, pausing and then if user continued to spend time can also be considered as time spent on a task.)
+    (Not implemented at the moment)
+    3. The timestamp should be in ascending order, If we get the task as completed first and then the task start,
+    we'll not be able to track it properly.
+    4. There maybe some missing data in the sequence which may cause the time tracking result in wrong or unexpected results.
+    
+
+Solution : 
+
+    1. Keep track of each user and his / her task which they spent the time on, By comparing the task start and task completed we can make sure.
+    2. Sort the data based on timestamp, so that none of the task is completed before its started in log data file.
+    3. generate report based on each user , the task and the time spent on each task.
+
+
+Improvements : 
+    1. We can add validation for the program to make sure the any particular task is started before it is stopped or completed.
+    2. We can make sure that the log data is completely in sequence without any missing data.
